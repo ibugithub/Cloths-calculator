@@ -1,0 +1,50 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'core/css/clothMeasure.css' %}">
+{% endblock css %}
+
+
+{% block main %} 
+
+<h3 class="center"> কাপরের দামকরন </h3> <br> <br> <br>
+<div class="center">
+
+<label >কাপরের দৈর্ঘ্য(গজ)</label>
+<input class="input" id="gozLenVal" type="number"> <br> <br>
+
+<label >কাপরের দৈর্ঘ্য(গিরা)</label>
+<input class="input" id="giraLenVal" type="number"> <br> <br>
+
+<label >কাপরের রেট(গজ) </label>
+<input class="input" id="rateVal" type="number" >
+
+<br> <br> <br>
+<div class="ArSubBtn">
+<button class="p5p25 borderNone"  id="aroAche">আরো আছে</button>
+
+<button class="p5p25 borderNone" id="lenbtn">সাবমিট করুন</button>
+</div>
+
+
+
+<button class="p5p25 borderNone" id="clearbtn">ক্লিয়ার করুন</button>
+
+</div>
+ 
+<div class="center">
+    <span class="clgreen" id="totalInfo">সর্বমোট টাকার পরিমান <span  id="prizeSpace"></span></span>
+    <span  class="clred" id="rateWarning"> </span>
+</div>
+
+
+{% endblock main %}
+
+ 
+
+
+{% block js %}
+<script src="{% static 'core/js/clothMeasure.js' %}"></script>
+<script src="{% static 'core/js/jquery.js' %}"></script>
+{% endblock js %}

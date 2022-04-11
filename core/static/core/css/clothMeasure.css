@@ -1,0 +1,53 @@
+.center{
+    text-align: center;
+}
+#totalInfo, #rateWarning {
+    display: none;
+    margin-top: 70px;
+}
+.clred{
+    color: red;
+    margin-top: 60px;
+}
+.ArSubBtn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin: 70px;
+}
+
+.p5p25{
+    padding: 5px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.input{
+    margin-left: 30px;
+    width: 110px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-style: none;
+    padding: 4px;
+}
+
+.borderNone{
+    border-style: none;
+}
+
+#prizeSpace {
+    margin-left: 7px;
+}
+
+.bgred{
+    background: red;
+}
+.bgyellow{
+    background: yellow;
+}
+.bglgreen{
+    background: lightgreen;
+}
+
+body{
+    background: rgb(226, 223, 223);
+}

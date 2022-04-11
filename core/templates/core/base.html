@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- This section is for css linking -->
+  {% block css %}
+
+  {% endblock css %}
+  
+  <!-- This section is for extra Linking -->
+  {% block extraLink %}
+  {% endblock extraLink %}
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Cairo font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&family=Jost:wght@200;300;400&display=swap"
+    rel="stylesheet">
+  {% block internal_css %}
+
+  {% endblock internal_css %}
+
+</head>
+
+<body id='body' {% block inbfol %} {% endblock inbfol %}>
+  <!-- This is Header section -->
+  {% block header %}
+  {% endblock header %}
+
+
+  <!-- This is main section -->
+  {% block main %}
+  {% endblock main %}
+
+
+  <!-- This is Footer Section -->
+  {% block footer %}
+  {% endblock footer %}
+
+  <!-- Internal Js -->
+  {% block internaljs %}
+  {% endblock internaljs %}
+
+  <!-- Custome js Link-->
+  {% block js %}
+  {% endblock js %}
+
+  <!-- Common js Link -->
+  {% block commonjs %}
+  {% endblock commonjs %}
+</body>
+
+</html>
