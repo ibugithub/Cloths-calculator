@@ -9,4 +9,4 @@ class ClothInfoAdmin(admin.ModelAdmin):
 
 @admin.register(ShopEvent)
 class ShopEventsAdmin(admin.ModelAdmin):
-    list_display = ("তারিখ", "পোশাক", "রেট", "পরিমান", "টাকা", "ধরন")
+    list_display = ("তারিখ", "পোশাক", "রেট", "পরিমান", "টাকা")

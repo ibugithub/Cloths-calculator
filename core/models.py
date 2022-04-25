@@ -14,11 +14,10 @@ EventTypeChoise = (
 
 
 class ShopEvent(models.Model):
-    তারিখ = models.DateTimeField(auto_now_add=True
+    তারিখ = models.DateField(
     )
     পোশাক = models.CharField(max_length=500)
     রেট = models.FloatField(null=True)
     পরিমান = models.CharField(max_length=200, null=True)
     টাকা = models.FloatField()
-    ধরন = models.CharField(max_length=40, choices= EventTypeChoise)
     
