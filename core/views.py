@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from .models import ClothInfo, ShopEvent
 from .forms import ShopEventForm
 
@@ -41,3 +41,11 @@ def ShopEventView(request):
     form = ShopEventForm()
     context["form"] = form
     return render(request, "core/ShopEvents.html", context)
+
+def TotalSell(request):
+    totalSell = ShopEvent.objects.all()
+    sum = 0
+    for total in  totalSell:
+        sum += total.টাকা
+    print(sum)
+    return HttpResponse("hello")
